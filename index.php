@@ -13,16 +13,18 @@ session_start();
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css?v=<?php echo time(); ?>">
 </head>
 <body>
+    <!-- Animated Background -->
+    <div class="bg-animation"></div>
 
     <!-- Login/Join Modal -->
     <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true" data-bs-backdrop="static" data-bs-keyboard="false">
       <div class="modal-dialog modal-dialog-centered px-3">
         <div class="modal-content border-0 shadow-lg blur-bg p-2">
           <div class="modal-header border-0 pb-0">
-            <h4 class="modal-title fw-bold" id="loginModalLabel" style="background: var(--primary-gradient); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Welcome to Realtime</h4>
+            <h4 class="modal-title fw-bold" id="loginModalLabel" style="color: var(--primary-color);">Welcome to Realtime</h4>
           </div>
           <div class="modal-body">
             <form id="joinForm">
